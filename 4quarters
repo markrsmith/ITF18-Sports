@@ -1,0 +1,11 @@
+#After 10 plays per team it is 1 quarter passed
+print("4 quarters for 1 game")
+q=0
+while q<5:
+  answer = input("Do you want to move onto the next quarter [y/n]:")
+  if answer == 'y':
+    q = q + 1
+    print("you have advanced to quarter", q)
+  if q == 4:
+   print("The game is over")
+   break
