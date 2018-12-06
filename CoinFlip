@@ -1,6 +1,5 @@
 #beginning of game
 import random
-
 print("[Heads or Tails]?")
 userGuess = (input())
 computerWord = random.randint (0,1)
