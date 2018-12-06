@@ -1,0 +1,5 @@
+hp = 2
+hp2 = 1
+print("Each player has", hp ,"lifepoints at the start of every play.")
+print("If two people hit you loose", hp ,"lifepoints and you are down right where they hit you two times." )
+print("If you get hit by one player, you loose", hp2 ,"lifepoint and you can keep running until you score or get hit again by another player.")
