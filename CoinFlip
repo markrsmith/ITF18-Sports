@@ -1,0 +1,11 @@
+#beginning of game
+import random
+
+print("[Heads or Tails]?")
+userGuess = (input())
+computerWord = random.randint (0,1)
+if computerWord == 0:
+  computerWord = "heads"
+if  computerWord == 1:
+  computerWord = "tails"
+print("You Chose " + str(userGuess)+ " and it was " +str(computerWord) + "!")
