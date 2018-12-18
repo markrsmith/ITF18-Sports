@@ -1,0 +1,52 @@
+Grade for Project:
+
+Game Requirements
+
+Ten Points Each
+
+1.	Must have a defined genre with a plot/narrative/point
+    +6
+2.	Create & use at least 3 functions
+    2/3 = +6.7
+3.	Make ASCII art (must be original)
+    +9
+4.	Have a life point system
+    +10
+5.	Have NPC interaction
+    0
+6.	Use the random variable function
+    +10
+7.	Use while-loops
+    +10
+8.	Have distinct code blocks
+    +9
+9.	Comment above code blocks and elsewhere when necessary
+    +7
+10.	Have variable/identifiers that are self-evident (e.g., lifePoints = 20)
+    +9
+
+Bonus Features
+Five Points Each
+•	Have more than 3 characters
+  0
+•	Venture through more than 10 screens/sections/rooms
+  0
+•	Include a secret level
+  0
+
+------------------------------------------------------------------------------------------------------
+Total: 66.7
+
+
+Student who did more or less will have a different grade that what is added up to here
+
+Comments:
+Okay, there's some bugs here. One, I pick a team name, but it never references that name again. Then, on the coin flip, I picked heads
+and I got this: "[Pick Heads or Tails]?
+Heads
+You Chose Heads and it was 7!
+You Chose Heads and it was tails!
+ah this dont matter"
+
+I'm not sure if you're scoring system works and seems almost impossible to score in a quarter. Also, I had quarter 2 twice. Where'
+three and four?
