@@ -1,0 +1,214 @@
+import random
+#beginning of game
+print("Welcome to Football")
+
+print("         _.-=-._ ")
+print("      .'\\\-+++-//'.")
+print("     (  ||     ||  )")
+print("      './/     \\\.'")
+print("        ` -=.=-'")
+
+print("What would you like your team name to be?")
+userName = (input())
+
+
+#CoinFlip
+print("[Pick Heads or Tails]?")
+userGuess = (input())
+computerWord = random.randint (1,10)
+if computerWord < 5:
+  computerWord = "heads"
+print("You Chose " + str(userGuess)+ " and it was " +str(computerWord) + "!")
+if computerWord > 5:
+  computerWord = "tails"
+print("You Chose " + str(userGuess)+ " and it was " +str(computerWord) + "!")
+#CoinFlip
+print("ah this dont matter")
+
+print(" -------------------------------------------------------------- ")
+print("| T  | G | 10 | 20 | 30 | 40 | 50 | 40 | 30 | 20 | 10 | G | T  |")   
+print("| O  |   |    |    |    |    |    |    |    |    |    |   | O  |")    
+print("| U  |   |    |    |    |    |    |    |    |    |    |   | U  |")    
+print("| C  |   |    |    |    |    |    |    |    |    |    |   | C  |")    
+print("| H  |   |    |    |    |    |    |    |    |    |    |   | H  |")    
+print("| D  |   |    |    |    |    |    |    |    |    |    |   | D  |")             
+print("| O  |   |    |    |    |    |    |    |    |    |    |   | O  |")    
+print("| W  |   |    |    |    |    |    |    |    |    |    |   | W  |")       
+print("| N  | G | 10 | 20 | 30 | 40 | 50 | 40 | 30 | 20 | 10 | G | N  |")     
+print(" ------------------------------------------------------------- ") 
+
+def gamePlay():
+  hit = random.randint(1,10)
+lifePoints = 3
+yards = 0
+touchdown = +7 
+gamecount = 10
+print("Do you want to run or pass?")
+while True:
+  hit = random.randint(1,10)
+  answer = input("Your answer [run/pass] : ")
+  if answer == 'run':
+    print("You chose to run")
+  if answer == 'pass':
+    print("You chose to pass")
+  if hit > 5:
+    yards = yards + 15 
+    gamecount = gamecount - 1
+    print("You did not get hit! You have" , yards, "yards. You have", gamecount, "plays left" )
+  if hit < 5:
+    yards = yards + 5
+    lifePoints = lifePoints -1 
+    gamecount = gamecount - 1
+    print("You got hit!", lifePoints," life points remaining. You have", gamecount, "plays left")
+  if lifePoints == 0:
+    print ("You are down !")
+    break
+  if yards >= 100:
+    print ("Touchdown !", touchdown, "points")
+    break
+
+    gamecount = gamecount - 1
+    if gamecount == 0:break
+
+gamePlay()
+
+
+print("Computers turn")
+def computerPlay():
+  while True:
+    computerScore = random.randint(1,10)
+    if computerScore > 6:
+      print("Computer scored!", +7)
+    break
+    if computerScore <6:
+      print("Computer did not score!")
+    break
+
+computerPlay()
+
+#After 10 plays per team it is 1 quarter passed
+q=1
+while q<5:
+  answer = input("Do you want to move onto the next quarter [y/n]:")
+  if answer == 'y':
+    q = q + 1
+    print("you have advanced to quarter", q)
+    break
+  if q == 4:
+    print("The game is over")
+    break
+
+hit = random.randint(1,10)
+lifePoints = 3
+yards = 0
+touchdown = +7 
+gamecount = 10
+print("Do you want to run or pass?")
+while True:
+  hit = random.randint(1,10)
+  answer = input("Your answer [run/pass] : ")
+  if answer == 'run':
+    print("You chose to run")
+  if answer == 'pass':
+    print("You chose to pass")
+  if hit > 5:
+    yards = yards + 15 
+    gamecount = gamecount - 1
+    print("You did not get hit! You have" , yards, "yards. You have", gamecount, "plays left" )
+  if hit < 5:
+    yards = yards + 5
+    lifePoints = lifePoints -1 
+    gamecount = gamecount - 1
+    print("You got hit!", lifePoints," life points remaining. You have", gamecount, "plays left")
+  if lifePoints == 0:
+    print ("You are down !")
+    break
+  if yards >= 100:
+    print ("Touchdown !", touchdown, "points")
+    break
+    gamecount = gamecount - 1
+    if gamecount == 0:break
+
+q=1
+while q<5:
+  answer = input("Do you want to move onto the next quarter [y/n]:")
+  if answer == 'y':
+    q = q + 1
+    print("you have advanced to quarter", q)
+    break
+  if q == 4:
+    print("The game is over")
+    break
+
+hit = random.randint(1,10)
+lifePoints = 3
+yards = 0
+touchdown = +7 
+gamecount = 10
+print("Do you want to run or pass?")
+while True:
+  hit = random.randint(1,10)
+  answer = input("Your answer [run/pass] : ")
+  if answer == 'run':
+    print("You chose to run")
+  if answer == 'pass':
+    print("You chose to pass")
+  if hit > 5:
+    yards = yards + 15 
+    gamecount = gamecount - 1
+    print("You did not get hit! You have" , yards, "yards. You have", gamecount, "plays left" )
+  if hit < 5:
+    yards = yards + 5
+    lifePoints = lifePoints -1 
+    gamecount = gamecount - 1
+    print("You got hit!", lifePoints," life points remaining. You have", gamecount, "plays left")
+  if lifePoints == 0:
+    print ("You are down !")
+    break
+  if yards >= 100:
+    print ("Touchdown !", touchdown, "points")
+    break
+    gamecount = gamecount - 1
+    if gamecount == 0:break
+
+q=1
+while q<5:
+  answer = input("Do you want to move onto the next quarter [y/n]:")
+  if answer == 'y':
+    q = q + 1
+    print("you have advanced to quarter", q)
+    break
+  if q == 4:
+    print("The game is over")
+    break
+
+hit = random.randint(1,10)
+lifePoints = 3
+yards = 0
+touchdown = +7 
+gamecount = 10
+print("Do you want to run or pass?")
+while True:
+  hit = random.randint(1,10)
+  answer = input("Your answer [run/pass] : ")
+  if answer == 'run':
+    print("You chose to run")
+  if answer == 'pass':
+    print("You chose to pass")
+  if hit > 5:
+    yards = yards + 15 
+    gamecount = gamecount - 1
+    print("You did not get hit! You have" , yards, "yards. You have", gamecount, "plays left" )
+  if hit < 5:
+    yards = yards + 5
+    lifePoints = lifePoints -1 
+    gamecount = gamecount - 1
+    print("You got hit!", lifePoints," life points remaining. You have", gamecount, "plays left")
+  if lifePoints == 0:
+    print ("You are down !")
+    break
+  if yards >= 100:
+    print ("Touchdown !", touchdown, "points")
+    break
+    gamecount = gamecount - 1
+    if gamecount == 0:break
